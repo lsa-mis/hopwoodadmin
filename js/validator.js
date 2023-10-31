@@ -1,0 +1,1 @@
+function hasHtml5Validation(){return"function"==typeof document.createElement("input").checkValidity}hasHtml5Validation()&&$(".validate-form").submit(function(a){this.checkValidity()?($(this).removeClass("invalid"),$("#status").html("submitted")):(a.preventDefault(),$(this).addClass("invalid"),$("#status").html("invalid"))});

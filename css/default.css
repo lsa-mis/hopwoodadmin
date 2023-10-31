@@ -1,0 +1,235 @@
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+
+/* html {
+    font-size: 20px;
+} */
+
+body {
+	padding-top: 70px;
+}
+
+#outputSummaryEvalData {
+  font-size: 80%;
+}
+
+.notes {
+	padding: 0px 20px;
+	color: #888;
+	font-size: .9em;
+	font-style: italic;
+
+}
+
+.hopwood {
+	background: #E6E6DC;
+	padding: 5px;
+}
+
+.notHopwood {
+	background: #FFFFF0;
+}
+
+li {
+	margin-top: 5px;
+
+}
+
+footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: .6em;
+	color: #5e8bac;
+	line-height:12px;
+	background-color: #ddd;
+	padding-top: .3em;
+}
+
+footer a img {
+	border: 0px;
+	}
+
+footer a {
+	color: #5e8bac;
+	text-decoration: none;
+	}
+
+footer a:hover {
+	background-color: transparent;
+	text-decoration: underline;
+}
+
+footer .mlogo {
+	width: 75px;
+	height: 75px;
+}
+
+.btn-toolbar {
+	padding: 5px 0px;
+
+}
+.outputContainer {
+	padding: 5px 20px;
+	background-color: #efe;
+}
+
+.ui-datepicker-calendar {
+    display: none;
+}
+
+select {
+	color:#000;
+}
+
+#cancel {
+	width: 50px;
+	margin-top: 5px;
+}
+
+.tblCenter {
+	text-align: center;
+}
+
+.tblGrow {
+	background-color: #e0ffff;
+}
+.cellHeight {
+	width: 400px;
+	height: 100px;
+	overflow: scroll;
+}
+
+#flashArea {
+	height: 20px;
+	margin-left: 20px;
+	font-size: 1.8rem;
+}
+
+#notadmin {
+	padding-bottom: 10px;
+
+}
+
+blockquote {
+	font-size: .9em;
+}
+
+.truncate_cell {
+	 width: 100px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+ }
+
+ .comment_cell {
+  min-width: 50%;
+  padding: 10px 5px;
+  border: 1px solid black;
+}
+
+.commentBlock{
+  height: 100px;
+  overflow-y:auto;
+}
+
+/* Progress bar */
+.progress{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+
+.progress > span{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+.progress .progress-bar{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 12px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    animation: loading-1 3.5s linear forwards;
+}
+.progress .progress-value{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #44484b;
+    font-size: 16px;
+    color: #fff;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.progress.blue .progress-bar{
+    border-color: #049dff;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 3.5s linear 3.5s forwards;
+}
+
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(170deg);
+        transform: rotate(178deg);
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .progress{ margin-bottom: 20px; }
+}
+
+.judge1_color{
+  background-color: #cccc66;
+}
+
+.judge2_color{
+  background-color: #cccc99;
+}

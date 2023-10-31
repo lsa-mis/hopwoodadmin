@@ -1,0 +1,4 @@
+[12-Oct-2023 18:48:08 UTC] PHP Warning:  readfile(/home/quilleng/public_html/../contestfiles/1455036428_GarbageAtragicomedy.pdf): Failed to open stream: No such file or directory in /home/quilleng/public_html/hopwoodadmin/fileholder.php on line 3
+[12-Oct-2023 18:48:11 UTC] PHP Warning:  readfile(/home/quilleng/public_html/../contestfiles/1455036428_GarbageAtragicomedy.pdf): Failed to open stream: No such file or directory in /home/quilleng/public_html/hopwoodadmin/fileholder.php on line 3
+[30-Oct-2023 16:05:52 UTC] PHP Warning:  readfile(/home/quilleng/public_html/../contestfiles/1435070365_Portraiture_susanpl): Failed to open stream: No such file or directory in /home/quilleng/public_html/hopwoodadmin/fileholder.php on line 3
+[30-Oct-2023 16:05:57 UTC] PHP Warning:  readfile(/home/quilleng/public_html/../contestfiles/1435070365_Portraiture_susanpl): Failed to open stream: No such file or directory in /home/quilleng/public_html/hopwoodadmin/fileholder.php on line 3

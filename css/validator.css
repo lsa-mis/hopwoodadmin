@@ -1,0 +1,34 @@
+/*
+  this code is part of a 3 part validator setup. It works with all modern browsers and is 
+  an excellent fix for the Safari browser non-compliance to the 'required' attribute.
+
+  The Parts:
+    1) HTML form tag must have a class="validate-form"
+    2) CSS each type of form element has a two part definition
+        .invalid input:required:invalid
+        .invalid input:required:valid
+    3) JS controls the class updating to show if the form field is valid or invalid
+
+    source:A PEN BY Ash Blue http://codepen.io/ashblue/pen/KyvmA;
+*/
+
+.invalid input:required:invalid {
+    background: #BE4C54;
+}
+
+.invalid input:required:valid {
+    background: #17D654 ;
+}
+
+.invalid textarea:required:invalid {
+    background: #BE4C54;
+}
+
+.invalid textarea:required:valid {
+    background: #17D654 ;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+}
