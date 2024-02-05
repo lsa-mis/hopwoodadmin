@@ -67,7 +67,7 @@ $( document ).ready(function(){
                 "</td><td>" + this.firstname + "</a></td><td>" + this.lastname + "</td><td>"  + this.penName + "</td><td><a href='https://webapps.lsa.umich.edu/UGStuFileV2/App/Cover/Cover.aspx?ID=" + this.umid + "' target='_blank'>" + this.umid + "</a></td></tr>");
           });
         $("#outputEvalData").append('</tbody></table></div>');
-      } else if (useContests == 10){
+      } else if ([10,36,37].includes(useContests)){
         $("#outputEvalData").html('<hr><hr><strong>' + data.result[0].contestName  + ' </strong>' +
           '<br>Judged by: ' + data.result[0].judge1_name +
           '<div class="table-responsive">' +

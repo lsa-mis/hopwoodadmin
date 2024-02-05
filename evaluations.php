@@ -155,7 +155,9 @@ require_once($_SERVER["DOCUMENT_ROOT"] . '/../Support/basicLib.php');
                 <li><a id="reportRatingBtn15" class="reportRatingBtn" data-contest="15" >The Marjorie Rapaport Award in Poetry</a></li>
                 <li><a id="reportRatingBtn7" class="reportRatingBtn" data-contest="7" >The Michael R. Gutterman Award in Poetry</a></li>
                 <li><a id="reportRatingBtn32" class="reportRatingBtn" data-contest="32" >Peter Philip Pratt Award in Fiction</a></li>
-                <li><a id="reportRatingBtn10" class="reportRatingBtn" data-contest="10" >The Roy W. Cowden Memorial Fellowship</a></li>
+                <li><a id="reportRatingBtn10" class="reportRatingBtn" data-contest="10" >The Roy W. Cowden Memorial Fellowship (AA)</a></li>
+                <li><a id="reportRatingBtn36" class="reportRatingBtn" data-contest="36" >The Roy W. Cowden Memorial Fellowship(DRBN)</a></li>
+                <li><a id="reportRatingBtn37" class="reportRatingBtn" data-contest="37" >The Roy W. Cowden Memorial Fellowship(FLINT)</a></li>
               </ul>
             </div>
           </div>

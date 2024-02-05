@@ -23,8 +23,8 @@ while ($row = $rows->fetch_assoc()) {
 
 //Check that there are judges assigned to the cont
 if ( count($judge_array) > 0 ){
-  // For all contests other than Cowden (10)
-  if ( $selectContests <> 10 ){
+  // For all contests other than Cowden (10,36,37)
+  if (!in_array($selectContests, [10, 36, 37], true)){
   //build pvt select statement
   $pvt_part = '';
   $pvt_count = 1;
@@ -159,7 +159,7 @@ SQL;
       }
     }
   } else {
-  // For Cowden (10) results
+  // For Cowden (10, 36, 37) results
   $queryRating = <<<SQL
     SELECT
     vw.EntryId
