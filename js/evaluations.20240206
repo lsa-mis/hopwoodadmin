@@ -31,7 +31,7 @@ $( document ).ready(function(){
     }
       $("#outputSummaryEvalData").empty();
       $("#outputEvalData").empty();
-    $.getJSON("ratingReport.php", {id: useContests}).done(function(data){
+    $.getJSON("ratingReport.php", {id: useContests}, function(data){
       var jdg2_name = '';
       var jdg2_rating = '';
       if (data.result.length == 0 ){
@@ -77,7 +77,7 @@ $( document ).ready(function(){
           '<th>First-Name</th><th>Last Name</th><th>Pen Name</th><th>UMID</th>' +
           '<th>Evaluator</th>' +
           '</thead><tbody>');
-          
+
         $.each(data.result, function(){
             $(".dataout").append("<tr><td><small>" + this.entryid +
               "</small></td><td>" + htmlEntities(this.committeecomment) + "</td><td><a class='btn btn-xs btn-info' href='fileholder.php?file=" + this.document +
@@ -113,14 +113,12 @@ $( document ).ready(function(){
         $("#outputEvalData").append('</tbody></table></div>');
       }
     })
-    .fail(function(jqxhr, textStatus, error) {
+    .fail(function() {
       $("#outputEvalData").html("There are no evaluated entries to display");
       console.log( "There are no judges assigned to this contest" );
-      var err = textStatus + ", " + error;
-      console.log("Request Failed: " + err);
     })
     .always(function() {
-      console.log( "completed" );
+      console.log( "complete" );
     });
   });
 
